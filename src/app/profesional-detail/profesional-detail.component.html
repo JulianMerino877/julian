@@ -1,0 +1,12 @@
+<h3>Detalles del Profesional</h3>
+<div *ngIf="profesional; else noEncontrado" class="card">
+    <div class="card-body text-center">
+        <img [src]="profesional.imagen" alt="{{ profesional.nombre }}" class="rounded-circle mb-3" style="width: 100px; height: 100px; border: 2px solid #007bff;">
+        <h5 class="card-title">{{ profesional.nombre | nombrePropio }}</h5>
+        <p class="card-text"><strong>Especialidad:</strong> <span class="text-primary">{{ profesional.especialidad }}</span></p>
+        <p class="card-text"><strong>Honorarios:</strong> <span class="text-success">{{ profesional.honorarios | currency }}</span></p>
+    </div>
+</div>
+<ng-template #noEncontrado>
+    <p>Profesional no encontrado.</p>
+</ng-template>

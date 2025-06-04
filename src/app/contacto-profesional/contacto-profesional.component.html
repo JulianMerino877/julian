@@ -1,0 +1,7 @@
+<h2>Contacto con Profesional</h2>
+<nav>
+  <a *ngFor="let prof of profesionales" [routerLink]="['formulario', prof.id]">
+    Contactar a {{ prof.nombre }}
+  </a>
+</nav>
+<router-outlet></router-outlet>

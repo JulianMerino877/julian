@@ -1,0 +1,47 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    background-color: #fff; /* Fondo blanco */
+    margin: 20px; /* Espaciado */
+}
+
+.card-body {
+    text-align: center;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+/* Posicionar la tarjeta a la izquierda */
+.container {
+    display: flex;
+    justify-content: flex-start; /* Alinea a la izquierda */
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Estilos para especialidad y honorarios */
+.card-text strong {
+    color: black; /* Títulos en negro */
+}
+
+.card-text span {
+    color: rgb(27, 27, 222); /* Especialidad en azul */
+}
+
+.card-text span:last-child {
+    color: green; /* Honorarios en verde */
+}

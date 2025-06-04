@@ -1,0 +1,16 @@
+<div *ngIf="!notFound; else errorTpl">
+  <h3>Formulario de Contacto para {{ profesional.nombre | nombrePropio }}</h3>
+  <form>
+    <label>Tu nombre:</label>
+    <input type="text" />
+    <br>
+    <label>Mensaje:</label>
+    <textarea></textarea>
+    <br>
+    <button type="button" [routerLink]="['/contacto-profesional/mensaje-enviado', profesional.id]">Enviar</button>
+  </form>
+</div>
+<ng-template #errorTpl>
+  <h3>Profesional no encontrado</h3>
+  <p>El profesional solicitado no existe.</p>
+</ng-template>

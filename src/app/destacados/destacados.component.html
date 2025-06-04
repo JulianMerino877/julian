@@ -1,0 +1,7 @@
+<div *ngIf="destacados.length > 0; else noDestacados">
+  <h2>Profesionales destacados</h2>
+  <app-profesional-list [profesionales]="destacados"></app-profesional-list>
+</div>
+<ng-template #noDestacados>
+  <p>No existen profesionales destacados.</p>
+</ng-template>
